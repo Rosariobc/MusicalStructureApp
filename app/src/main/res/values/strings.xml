@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Musical Structure App</string>
+
+    <!--Activities-->
+    <string name="title">My Colombian Music</string>
+    <string name="artist">Artist</string>
+    <string name="regions">Regions</string>
+    <string name="search">Search</string>
+    <string name="songs">Songs</string>
+    <string name="search_hint">Search</string>
+    <string name="playing">Now Playing</string>
+
+</resources>

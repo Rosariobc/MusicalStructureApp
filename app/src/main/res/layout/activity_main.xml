@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_title"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/colombian_face"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/album"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_colombiana"
+            />
+
+        <TextView
+            android:id="@+id/songs_banner"
+            style="@style/CategoryStyle"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/main_artist_background"
+            android:text="@string/songs"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/regions_banner"
+            style="@style/CategoryStyle"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/main_centro5"
+            android:text="@string/regions"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            />
+
+</LinearLayout>

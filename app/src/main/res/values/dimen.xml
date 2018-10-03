@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TextSize -->
+    <dimen name="main_title">25sp</dimen>
+    <dimen name="secondary_title">16sp</dimen>
+    <dimen name="text">12sp</dimen>
+
+    <dimen name="list_item_height">88dp</dimen>
+
+    <!-- Margin & Padding-->
+    <dimen name="margin">16dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="padding">16dp</dimen>
+
+    <!-- Album Images-->
+    <dimen name="playing">100dp</dimen>
+    <dimen name="album">150dp</dimen>
+    <dimen name="playing_big">250dp</dimen>
+    <dimen name="play_bar">70dp</dimen>
+    <dimen name="button">50dp</dimen>
+
+</resources>

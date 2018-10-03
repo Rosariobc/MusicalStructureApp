@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/songs_playing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/player_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_title"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/songs_playing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/colombian_face"
+            android:layout_width="@dimen/playing_big"
+            android:layout_height="@dimen/playing_big"
+            android:src="@drawable/main_colombiana"
+            />
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/secondary_title"
+            android:textStyle="bold"
+            tools:text="carlos vives"/>
+
+        <TextView
+            android:id="@+id/songs_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text"
+            tools:text="el mar de tus ojos"/>
+
+        <TextView
+            android:id="@+id/regions_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text"
+            tools:text="caribe"/>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_bar"
+        android:layout_below="@+id/songs_playing"
+        android:max="10"
+        android:progressBackgroundTint="@color/colorAccent1"
+        android:thumbTint="@color/colorAccent2"
+        />
+
+    <LinearLayout
+        android:id="@+id/play_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/seek_bar"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin">
+
+        <Button
+            android:id="@+id/play_button"
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/button_play"
+            android:padding="@dimen/margin"/>
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/button_stop"
+            android:padding="@dimen/margin"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
